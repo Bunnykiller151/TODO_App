@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TODO hinzufügen</h1>
+    <form action="/" method="post">
+        <label for="userId">User ID:</label>
+        <input type="number" id="userId" name="userId" placeholder="Geben Sie die User ID ein" required>
+
+        <label for="title">Titel:</label>
+        <input type="text" id="title" name="title" placeholder="Titel des TODOs" required>
+
+        <label for="description">Beschreibung:</label>
+        <textarea id="description" name="description" placeholder="Beschreibung des TODOs"></textarea>
+
+        <label for="completed">Status:</label>
+        <select id="completed" name="completed" required>
+            <option value="false" selected>Offen</option>
+            <option value="true">Abgeschlossen</option>
+        </select>
+
+        <button type="submit">TODO hinzufügen</button>
+    </form>
+    
+    <h2>API-Antwort:</h2>
+    <pre>{{ response }}</pre>
+</body>
+</html>

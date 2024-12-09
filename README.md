@@ -31,7 +31,7 @@ Du arbeitest an einer kleinen TODO-App, die Benutzereingaben über ein Formular 
 
 ---
 
-### **Aufgabe 4: Anzeige aller TODOs**
+### **Aufgabe 3: Anzeige aller TODOs**
 - **Implementiere eine neue Funktion:**
   - Rufe die vorhandenen TODO-Einträge aus der API (`GET /todos`) ab.
   - Zeige die Ergebnisse im Frontend in einer übersichtlichen Liste an.
